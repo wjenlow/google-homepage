@@ -1,0 +1,1 @@
+The Odin Project: Mini project consisting of deconstructing Google homepage and rebuilding it. 
