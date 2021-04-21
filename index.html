@@ -2,154 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Google</title>
-    <style>
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            font-size: 14px;
-            font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-        }
-        li {
-            display: inline;
-            padding-right: 1em;
-            font-size: 14px;
-            font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-        }
-        #logo {
-            position: fixed;
-            top: 40%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }           
-        #mag-holder{
-            cursor:pointer;
-            height:21px;
-            width:21px; 
-        }     
-        #search-bar {
-            position: fixed;
-            top: 48%;
-            left: 50%;            
-            transform: translate(-50%, -50%);
-            border: 1px solid rgb(218, 214, 214);
-            border-radius: 20px;
-            margin-top:1%;       
-        }
-        #btn-container {
-            height: 40px;
-            width: 300px;
-            display: flex;
-            position: fixed;
-            top: 52%;
-            left: 50%;
-            transform: translate(-50%, -50%);    
-            margin-top:2%;       
-        }
-        #search-btn {
-            cursor:pointer;
-            margin: 0 0 0 auto;
-            background-color:#f8f7f7;
-            text-align:center;
-            padding-left: 1em;
-            padding-right: 1em;
-            border: 1px solid rgb(233, 230, 230);
-            border-radius: 2px;
-            font-size: 14px;
-            font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-        }
-        #lucky-btn {
-            cursor:pointer;
-            margin: 0 0 0 auto;
-            background-color:#f8f7f7;
-            text-align:center; 
-            padding-left: 1em;
-            padding-right: 1em;   
-            border: 1px solid rgb(233, 230, 230);
-            border-radius: 2px;
-            font-size: 14px;
-            font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-        }    
-        #feature-link {
-            position: fixed;
-            top: 56%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            margin-top:3%;       
-            font-size: 14px;
-            font-family: 'Arial', 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
-        }
-        #footer-container-left {
-            height: 34px;
-            width: 825px;
-            display: flex;
-            position: fixed;
-            top: 96%;
-            left: 0%;    
-            background-color: #e4e1e1;              
-        }
-        #footer-container-center {
-            height: 34px;
-            width: 725px;
-            display: flex;
-            position: fixed;
-            top: 96%;
-            left: 45%;    
-            background-color: #e4e1e1;              
-        }
-        #footer-container-right {
-            height: 34px;
-            width: 725px;
-            display: flex;
-            position: fixed;
-            top: 96%;
-            left: 88%;    
-            background-color: #e4e1e1;              
-        }
-        #footer-content {
-            color:rgb(94, 94, 94);
-            padding-top: .5em;
-        }
-        
-    </style>
-    <ul>
-        <li>About</li>
-        <li>Store</li>
-    </ul>        
+    <link rel="stylesheet" href="style.css">
+    <title>Google</title>     
 </head>
 <body>
-    <div id="logo">
-        <img class="logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-            alt="Google logo">
-    </div>
-    <div id="search-bar">
-        <img src='magnifying_glass.png' id='mag-holder'/>
-        <input type="text" placeholder="" size="80">
-    </div>
-    <div id="btn-container"> 
-        <button id="search-btn">Google Search</button>
-        <button id="lucky-btn">I'm Feeling Lucky</button>
-    </div>
-    <div id="feature-link">
-        <a href="https://artsandculture.google.com/story/UAURf5dVbFaD3g" >World Heritage Day: visit historic sites from home</a>
-    </div>
+    <header>
+        <nav>
+            <div>
+                <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header">About</a>
+                <a href="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US">Store</a>
+            </div>
+            <div>
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>          
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+                alt="Google logo">
+        </div>
+        <div>
+            <form>
+                <div class="search_icon gsprite"></div>
+                <input type="text" name="search" id="search">
+                <div class="buttons"> 
+                    <a><div id="gsearch">Google Search</div></a>
+                    <a><div id="lucky">I'm Feeling Lucky</div></a>
+                </div>
+                <div id="feature-link">
+                    <a href="https://artsandculture.google.com/story/UAURf5dVbFaD3g" >World Heritage Day: visit historic sites from home</a>
+                </div>                
+            </form>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <div>  
+                <a href="https://ads.google.com">Advertising</a>
+                <a href="https://smallbusiness.withgoogle.com">Business</a>
+                <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search Works</a>
+            </div>    
+            <div>   
+                <a href="https://sustainability.google/commitments/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=">Carbon neutral since 2007</a>
+            </div>             
+            <div>
+                <a href="https://policies.google.com/privacy?hl=en&fg=1" >Privacy</a>
+                <a href="https://policies.google.com/terms?hl=en&fg=1" >Terms</a>
+                <a href="https://www.google.com/preferences?hl=en&client=safari&fg=1" >Settings</a>
+            </div>
+        </nav>
+    </footer>
 </body>
-<footer>
-    <div id="footer-container-left">  
-            <li id="footer-content">Advertising</li>
-            <li id="footer-content">Business</li>
-            <li id="footer-content">How Search Works</li>
-    </div>   
-    <div id="footer-container-center">  
-        
-            <li id="footer-content">Carbon neutral since 2007</li>
-        
-    </div>    
-    <div id="footer-container-right">
-        <li id="footer-content">Privacy</li>
-        <li id="footer-content">Terms</li>
-        <li id="footer-content">Settings</li>
-    </div>
-</footer>
 </html>
